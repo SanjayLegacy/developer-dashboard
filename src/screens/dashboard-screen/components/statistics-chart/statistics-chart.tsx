@@ -39,7 +39,6 @@ const StatisticsChart = () => {
     });
 
     xRenderer.labels.template.setAll({
-      rotation: -90,
       centerY: am5.p50,
       centerX: am5.p100,
       paddingRight: 15,
