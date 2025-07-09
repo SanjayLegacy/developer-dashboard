@@ -28,14 +28,12 @@ export default function useDeveloperHooks(props: Props) {
   const usersCollectionRef = collection(db, "developers");
 
   const fetchDevelopersDocs = async () => {
-    // const data = await getDocs(usersCollectionRef);
     const q = query(
       usersCollectionRef,
       orderBy("name", order as "asc" | "desc"),
     );
     const snapshot = await getDocs(q);
     return snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-    // return data.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
   };
 
   const fetchDevelopersData = () => {
