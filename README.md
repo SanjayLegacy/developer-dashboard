@@ -1,6 +1,6 @@
 # Developer Dashboard
 
-Hosted: ``
+Hosted: `https://developer-dashboard-mocha.vercel.app/`
 
 Tech used:
 
